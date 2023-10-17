@@ -55,7 +55,7 @@ export const ConnectedPoint = forwardRef<any, PointProps>(
             set((nodes: any) => [...nodes, state])
             return () => void set((nodes: any) => nodes.filter((n: any) => n !== state))
         }, [state, pos])
-        const [hovered, setHovered] = useState(false)
+        const [_, setHovered] = useState(false)
         return (
             <Circle ref={ref} opacity={0.3} color={color} {...props} position={pos}
                 onPointerOver={() => setHovered(true)}
