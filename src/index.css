@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image-container {
+    margin: auto;
+    background: url('./assets/caricatura.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
